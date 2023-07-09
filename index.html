@@ -147,56 +147,58 @@
       <section class="advantages-section section-background">
         <div class="container">
           <h2 class="visually-hidden">Our advantages</h2>
-          <ul class="advantages-list list">
-            <li class="advantages-list-item">
-              <div class="advantages-icons-wrapper">
-                <svg class="advantages-icons" width="64" height="64">
-                  <use href="./images/icons.svg#antenna"></use>
-                </svg>
-              </div>
-              <h3 class="subtitle advantages-subtitle">Strategy</h3>
-              <p class="page-text advantages-page-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li class="advantages-list-item">
-              <div class="advantages-icons-wrapper">
-                <svg class="advantages-icons" width="64" height="64">
-                  <use href="./images/icons.svg#clock"></use>
-                </svg>
-              </div>
-              <h3 class="subtitle advantages-subtitle">Punctuality</h3>
-              <p class="page-text advantages-page-text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-            <li class="advantages-list-item">
-              <div class="advantages-icons-wrapper">
-                <svg class="advantages-icons" width="64" height="64">
-                  <use href="./images/icons.svg#diagram"></use>
-                </svg>
-              </div>
-              <h3 class="subtitle advantages-subtitle">Diligence</h3>
-              <p class="page-text advantages-page-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li class="advantages-list-item">
-              <div class="advantages-icons-wrapper">
-                <svg class="advantages-icons" width="64" height="64">
-                  <use href="./images/icons.svg#astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="subtitle advantages-subtitle">Technologies</h3>
-              <p class="page-text advantages-page-text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
+          <div class="advantages-container">
+            <ul class="advantages-list list">
+              <li class="advantages-list-item">
+                <div class="advantages-icons-wrapper">
+                  <svg class="advantages-icons" width="64" height="64">
+                    <use href="./images/icons.svg#antenna"></use>
+                  </svg>
+                </div>
+                <h3 class="subtitle advantages-subtitle">Strategy</h3>
+                <p class="page-text advantages-page-text">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </li>
+              <li class="advantages-list-item">
+                <div class="advantages-icons-wrapper">
+                  <svg class="advantages-icons" width="64" height="64">
+                    <use href="./images/icons.svg#clock"></use>
+                  </svg>
+                </div>
+                <h3 class="subtitle advantages-subtitle">Punctuality</h3>
+                <p class="page-text advantages-page-text">
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
+                </p>
+              </li>
+              <li class="advantages-list-item">
+                <div class="advantages-icons-wrapper">
+                  <svg class="advantages-icons" width="64" height="64">
+                    <use href="./images/icons.svg#diagram"></use>
+                  </svg>
+                </div>
+                <h3 class="subtitle advantages-subtitle">Diligence</h3>
+                <p class="page-text advantages-page-text">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </li>
+              <li class="advantages-list-item">
+                <div class="advantages-icons-wrapper">
+                  <svg class="advantages-icons" width="64" height="64">
+                    <use href="./images/icons.svg#astronaut"></use>
+                  </svg>
+                </div>
+                <h3 class="subtitle advantages-subtitle">Technologies</h3>
+                <p class="page-text advantages-page-text">
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!-- Speciality Section -->
@@ -205,28 +207,54 @@
           <h2 class="section-title speciality-title">What are we doing</h2>
           <ul class="speciality-list list">
             <li class="speciality-list-item">
-              <img
-                src="./images/computer1.jpg"
-                alt="coomputer"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="./images/computer@1x-desc.webp 1x,
+                    ./images/computer@2x-desc.webp 2x
+                  "
+                  media="(min-width: 1140px)"
+                />
+                <img
+                  src="./images/computer@1x-desc.webp"
+                  alt="computer"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="speciality-list-item">
-              <img
-                src="./images/screens1.jpg"
-                alt="phone screen"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/screens@1x-desc.webp 1x,
+                    ./images/screens@2x-desc.webp 2x
+                  "
+                  media="(min-width: 1140px)"
+                />
+                <img
+                  src="./images/screens@1x-desc.webp"
+                  alt="phone screen"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="speciality-list-item">
-              <img
-                src="./images/phones1.jpg"
+              <picture>
+                <picture>
+                <source
+                  srcset="
+                    ./images/phones@1x-desc.webp 1x,
+                    ./images/phones@2x-desc.webp 2x"
+                  media="(min-width: 1140px)"
+                />
+                <img
+                src="./images/phones@1x-desc.webp"
                 alt="phone"
                 width="360"
                 height="300"
               />
+              </picture>
             </li>
           </ul>
         </div>
@@ -237,12 +265,17 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-list-item team-background">
-              <img
+              <picture>
+                <source srcset="./images/mark@1x-desc.webp 1x, ./images/mark@2x-desc.jpg 2x" media="(min-width: 1140px)">
+                <source srcset="./images/mark@1x-tab.webp 1x, ./images/mark@2x-tab.webp 2x" media="(min-width: 768px)">
+                <source srcset="./images/mark@1x-mobile.webp 1x, ./images/mark@2x-mobile.webp 2x" media="(max-width: 767px)">
+                <img
                 src="./images/mark.jpg"
                 alt="photo of mark guerrero"
                 width="264"
                 height="260"
               />
+              </picture>
               <div class="team-card">
                 <h3 class="subtitle">Mark Guerrero</h3>
                 <p class="page-text">Product Designer</p>
@@ -279,12 +312,17 @@
               </div>
             </li>
             <li class="team-list-item team-background">
-              <img
+              <picture>
+                <source srcset="./images/tom@1x-desc.webp 1x, ./images/tom@2x-desc.webp 2x" media="(min-width: 1140px)">
+                <source srcset="./images/tom@1x-tab.webp 1x, ./images/tom@2x-tab.webp 2x" media="(min-width: 768px)">
+                <source srcset="./images/tom@1x-mobile.webp 1x, ./images/tom@2x-mobile.webp 2x" media="(max-width: 767px)">
+                <img
                 src="./images/tom.jpg"
                 alt="photo of tom ford"
                 width="264"
                 height="260"
               />
+              </picture>
               <div class="team-card">
                 <h3 class="subtitle">Tom Ford</h3>
                 <p class="page-text">Frontend Developer</p>
@@ -321,12 +359,17 @@
               </div>
             </li>
             <li class="team-list-item team-background">
-              <img
+              <picture>
+                <source srcset="./images/camila@1x-desc.webp 1x, ./images/camila@2x-desc.webp 2x" media="(min-width: 1140px)">
+                <source srcset="./images/camila@1x-tab.webp 1x, ./images/camila@2x-tab.webp 2x" media="(min-width: 768px)">
+                <source srcset="./images/camila@1x-mobile.webp 1x, ./images/camila@2x-mobile.webp 2x" media="(max-width: 767px)">
+                <img
                 src="./images/camila.jpg"
                 alt="photo of camila garcia"
                 width="264"
                 height="260"
               />
+              </picture>
               <div class="team-card">
                 <h3 class="subtitle">Camila Garcia</h3>
                 <p class="page-text">Marketing</p>
@@ -363,12 +406,17 @@
               </div>
             </li>
             <li class="team-list-item team-background">
-              <img
+              <picture>
+                <source srcset="./images/daniel@1x-desc.webp 1x, ./images/daniel@2x-desc.webp 2x" media="(min-width: 1140px)">
+                <source srcset="./images/daniel@1x-tab.webp 1x, ./images/daniel@2x-tab.webp 2x" media="(min-width: 768px)">
+                <source srcset="./images/daniel@1x-mobile.webp 1x, ./images/daniel@2x-mobile.webp 2x" media="(max-width: 767px)">
+                <img
                 src="./images/daniel.jpg"
                 alt="photo of daniel wilson"
                 width="264"
                 height="260"
               />
+              </picture>
               <div class="team-card">
                 <h3 class="subtitle">Daniel Wilson</h3>
                 <p class="page-text">UI Designer</p>

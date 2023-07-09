@@ -341,7 +341,7 @@
   background-position: center;
 }
 
-/* @media (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
@@ -349,9 +349,9 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/main-background@2x-desc.jpg);
+      url(../images/main-background@2x-mobile.webp);
   }
-} */
+}
 /**
   |============================
   | /Hero
