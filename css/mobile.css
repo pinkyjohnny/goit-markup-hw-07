@@ -275,8 +275,14 @@
 
 .mobile-social-list {
   display: flex;
-  gap: 56px;
+  gap: 30px;
   margin-top: 48px;
+}
+
+@media screen and (min-width: 400px) {
+  .mobile-social-list {
+    gap: 56px;
+  }
 }
 
 .mobile-social-list-link {
