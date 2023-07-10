@@ -410,6 +410,7 @@
   .footer-social-wrapper {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 0;
   }
 
   .footer-container {
@@ -436,6 +437,8 @@
     letter-spacing: 0.02em;
     color: #ffff;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .footer-input {
