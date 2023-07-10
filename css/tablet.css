@@ -253,12 +253,6 @@
     align-items: flex-start;
   }
 
-  /**
-  |============================
-  | ATTENTION!!!!!
-  |============================
-*/
-
   /* Advantages Icons */
 
   .advantages-icons {
@@ -326,5 +320,38 @@
   .footer-email-text {
     display: flex;
     justify-content: flex-start;
+  }
+
+  /**
+    |============================
+    | /Footer
+    |============================
+  */
+
+  /**
+    |============================
+    | Portfolio
+    |============================
+  */
+  .filters-list {
+    justify-content: center;
+  }
+
+  .menu-link-portfolio::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    width: 66px;
+    height: 4px;
+    bottom: -1px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    .portfolio-list {
+      gap: 18px;
+    }
   }
 }
